@@ -1,0 +1,182 @@
+body {
+    min-height: 100vh;
+
+    display: grid;
+    place-items: center;
+    background-image: url("file:///C:/Users/PC/Downloads/blob-scene-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.HeadText {
+    text-transform: uppercase;
+    color: #EEA36d;
+    font-size: 6rem;
+    text-shadow: 0.1rem 0.3rem 0.3rem rgb(255, 254, 254);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.custom-select {
+    display: flex;
+    margin: 0 4rem;
+}
+
+select {
+    background: linear-gradient(#d18143, #EEA36d);
+    margin: 1rem;
+    padding: .8rem 1rem;
+    border: none;
+
+    border-radius: 1rem;
+    font-size: 23px;
+    text-align: center;
+    appearance: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+    text-shadow: 0.1rem 0.1rem 0.25rem rgb(73, 71, 71);
+
+}
+
+select:hover {
+    background: linear-gradient(#c3c1c0, #ec9e66);
+    box-shadow: inset -1px -1px 32px #f7f7f5ae,
+        1px 1px 5px #d18143;
+}
+
+select::-webkit-scrollbar {
+    display: none;
+}
+
+select>option {
+    background-color: #EEA36d;
+    box-shadow: inset 2px 2px 22px 22px #d18143;
+}
+
+
+.Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: capitalize;
+}
+
+.Card>div {
+    margin: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 44px;
+    background: linear-gradient(#d18143, #EEA36d);
+    box-shadow: -1px -1px 32px #b3b3b3ae,
+        1px 1px 5px #ffffff;
+    color: aliceblue;
+    border: none;
+}
+
+.Card>div:hover {
+    background: linear-gradient(#c3c1c0, #ec9e66);
+    box-shadow: inset -1px -1px 32px #f7f7f5ae,
+        1px 1px 5px #d18143;
+
+}
+
+.Card>div>img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.Card-Profile {
+    color: #ec9e66;
+    font-size: 16px;
+    margin: 1rem;
+    width: 14rem;
+    height: 20rem;
+    padding: 2rem 1rem;
+    border-radius: 44px;
+    background: linear-gradient(#d18143, #EEA36d);
+    box-shadow: -1px -1px 32px #b3b3b3ae,
+        1px 1px 5px #ffffff;
+    color: aliceblue;
+    border: none;
+
+}
+
+.Card-Profile>img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 5rem;
+    border: #d18143 13px solid;
+}
+
+.svg-icon>a:link,
+a {
+    text-decoration: none;
+    color: #fffefd;
+
+}
+
+.svg-icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.svg-icon>a>svg {
+    margin: 1rem;
+    height: 3rem;
+    width: 3rem;
+    stroke: #d18143;
+    stroke-width: 1.3px;
+    stroke-linejoin: miter;
+}
+
+.Footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Footer-footer{
+position: relative;
+display: block;
+min-height: 100px;
+min-width: 100px;
+
+}
+.Footer-footer>h1 {
+    color: #c3c1c0;
+    margin: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-style: italic;
+    text-shadow: 0.1rem 0.3rem 0.3rem #d18143;
+
+   
+}
+
+.Footer-footer>svg {
+    width: 15rem;
+    height: 15rem;
+    stroke: #EEA36d;
+    stroke-width: 0.5px;
+    stroke-linejoin: miter;
+    color: #d18143;
+    z-index: calc(-1);
+    border-radius: 15rem;
+    padding: 3rem;
+    margin-top: -10rem;
+    margin-right: 5rem;
+    box-shadow: inset -1px -1px 32px #ec9e66,
+    1px 1px 5px #d18143;
+    animation: rotate 12s linear infinite;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+      width: 1rem;
+      height: 1rem;
+    }
+    to {
+      transform: rotate(360deg);
+      width: 15rem;
+      height: 15rem;
+    }
+  }
